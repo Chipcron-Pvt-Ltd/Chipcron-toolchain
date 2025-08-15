@@ -4,6 +4,8 @@
 
 `chipcron-tool` is a dockerized RISCV processor generator and synthesis utility that processes an **assembly file** and a **configuration JSON file** to generate a Verilog-based RISC-V processor. 
 
+For more information on related projects using chipcron-tool, visit our official website: 👉 https://chipcron-pvt-ltd.github.io/webpage/
+
 ---
 
 ## 🚀 Features
@@ -40,7 +42,7 @@ curl -s https://raw.githubusercontent.com/mayank2001/chipcron-tool/main/install-
 ### 🔧 Option 2: Manual install
 
 ```bash
-git clone https://github.com/mayank2001/chipcron-tool.git
+git clone [https://github.com/mayank2001/chipcron-tool.git](https://github.com/Chipcron-Pvt-Ltd/Chipcron-toolchain.git)
 cd chipcron-tool
 chmod +x install-chipcron-tool.sh
 ./install-chipcron-tool.sh
@@ -94,7 +96,7 @@ This command will:
 
 ## 📄 Output
 
-Output files (e.g., `result.txt`, logs, etc.) are saved to:
+Output files (e.g., `processor.v`, testbench.v) are saved to:
 
 ```
 /home/$USER/data
@@ -105,24 +107,6 @@ Check this folder after execution:
 ```bash
 ls /home/$USER/data
 ```
-
----
-
-## 🔐 Security Details
-
-This tool is built using Docker multi-stage builds and packaging techniques:
-
-- Internal logic is archived and optionally compiled
-- No `.sh`, `.json`, or `.py` source files are exposed in the final image
-- The container deletes temporary files after execution
-- Reverse-engineering is discouraged via binary obfuscation (optional)
-
-You can inspect the image:
-```bash
-sudo docker run -it mayank2001/chipcron-tool bash
-```
-
-But internal source is protected.
 
 ---
 
