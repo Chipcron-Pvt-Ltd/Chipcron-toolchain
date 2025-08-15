@@ -1,4 +1,4 @@
-# 🔧 chipcron-tool
+# 🔧 Chipcron-tool
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/mayank2001/chipcron-tool?style=flat-square)](https://hub.docker.com/r/mayank2001/chipcron-tool)
 
